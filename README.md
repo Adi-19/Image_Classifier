@@ -2,7 +2,7 @@
 Create your own Image Classifier
 
 # Overview
-In this project, students first develop code for an image classifier built with PyTorch, then convert it into a command line application.
+In this project, students first develop code for an image classifier built with Tensorflow, then convert it into a command line application.
 
 # Install
 This project requires Python 2.7 and the following Python libraries installed:
