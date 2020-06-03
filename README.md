@@ -22,8 +22,8 @@ ipython notebook Image Classifier Project.ipynb or
 
 jupyter notebook Image Classifier Project.ipynb This will open the iPython Notebook software and project file in your browser.
 
-# Or for Command Line In a terminal or command window, navigate to the top-level project directory / (that contains this README) and run one of the following commands:
-
+# Or for Command Line 
+In a terminal or command window, navigate to the top-level project directory / (that contains this README) and run one of the following commands:
 Train a new network on a data set with train.py
 Basic usage: python train.py data_directory
 Prints out training loss, validation loss, and validation accuracy as the network trains
