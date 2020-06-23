@@ -1,41 +1,30 @@
-# Image_Classifier
-Create your own Image Classifier
+# Deep Learning
+# Project: Image Classifier
+Source
+# Project 2 from Udacity's Intro to Machine Learning Nanodegree
 
-# Overview
-In this project, students first develop code for an image classifier built with Tensorflow, then convert it into a command line application.
+# Description
+Developed an image classifier with Tenorflow, then converted it into a command line application.
 
+Loaded training data, validation data, testing data, label mappings, and applied transformations (random scaling, cropping, resizing, flipping) to training data
+Normalized means and standard deviations of all image color channels, shuffled data and specified batch sizes
+Loaded pre-trained VGG16 network
+Defined a new untrained feed-forward network as a classifier, using ReLU activations, and Dropout
+Defined Negative Log-Likelihood Loss, Adam Optimizer, and learning rate
+Trained the classifier layers with backpropagation in a CUDA GPU using the pre-trained network to ~90% accuracy on the validation set
+Graphed training/validation/testing loss and validation/testing accuracy to ensure convergence to a global (or sufficient local) minimum
+Saved and loaded model to perform inference later
+Preprocessed images (resize, crop, normalized means and standard deviations) to use as input for model testing
+Visually displayed images to ensure preprocessing was successful
+Predicted the class/label of an image using the trained model and plotted top 5 classes to ensure the validity of the prediction
 # Install
-This project requires Python 2.7 and the following Python libraries installed:
+This project requires Python 3.x and the following Python libraries installed:
 
-PyTorch
-ArgParse
-Jason
-PIL
 NumPy
 Pandas
-matplotlib
-scikit-learn You will also need to have software installed to run and execute an iPython Notebook We recommend students install Anaconda, a pre-packaged Python distribution that contains all of the necessary libraries and software for this project.
-# Run
-In a terminal or command window, navigate to the top-level project directory / (that contains this README) and run one of the following commands:
+Matplotlib
+Seaborn
+Tensorflow
+You will also need to have software installed to run and execute an iPython Notebook
 
-ipython notebook Image Classifier Project.ipynb or
-
-jupyter notebook Image Classifier Project.ipynb This will open the iPython Notebook software and project file in your browser.
-
-# Or for Command Line 
-In a terminal or command window, navigate to the top-level project directory / (that contains this README) and run one of the following commands:
-Train a new network on a data set with train.py
-Basic usage: python train.py data_directory
-Prints out training loss, validation loss, and validation accuracy as the network trains
-Options:
-Set directory to save checkpoints: python train.py data_dir --save_dir save_directory
-Choose architecture: python train.py data_dir --arch "vgg13"
-Set hyperparameters: python train.py data_dir --learning_rate 0.01 --hidden_units 512 --epochs 20
-Use GPU for training: python train.py data_dir --gpu
-Predict flower name from an image with predict.py along with the probability of that name. That is, you'll pass in a single image /path/to/image and return the flower name and class probability.
-
-Basic usage: python predict.py /path/to/image checkpoint
-Options:
-Return top KK most likely classes: python predict.py input checkpoint --top_k 3
-Use a mapping of categories to real names: python predict.py input checkpoint --category_names cat_to_name.json
-Use GPU for inference: python predict.py input checkpoint --gpu
+It's recommended to install Anaconda, a pre-packaged Python distribution that contains all of the necessary libraries and software for this project.
